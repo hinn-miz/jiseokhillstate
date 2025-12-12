@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="힐스테이트 지석 할인분양 1666-6093.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content=" 지석 힐스테이트" />
+  <meta property="og:description" content="힐스테이트 지석 할인분양 1666-6093" />
+  <meta property="og:image" content="https://jiseokhillstate.netlify.app//images/og-image.png" />
+  <meta property="og:url" content="https://jiseokhillstate.netlify.app/" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <title> 지석 힐스테이트</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2404@1.0/Yangjin.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* 모달팝업 스타일 */
+    .popup-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup-box {
+  position: relative;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  padding: 1rem;
+  text-align: center;
+  max-width: 90%;
+  width: 400px;
+  animation: popupFade 0.3s ease-out;
+}
+
+.popup-box img.popup-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.popup-close {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.popup-actions {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+@keyframes popupFade {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+    /* 모바일에서 사업안내 텍스트 가운데 정렬 */
+    @media screen and (max-width: 768px) {
+      .business-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .info-column {
+        width: 100%;
+      }
+      .info-item {
+        text-align: center;
+      }
+      .info-item p {
+        text-align: center;
+      }
+    }
+
+    /* TOP 버튼 우측 하단 고정 */
+    .top-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+    }
+    .site-footer .footer-right {
+      align-items: flex-end;
+    }
+  </style>
+</head>
+<body id="top">
+  <!-- 상단 헤더 -->
+  <header class="hero">
+    <div class="top-bar">
+      <div class="top-left">
+        <a href="#top" class="logo-link"><img src="images/logo.png" alt="로고" class="logo" /></a>
+      </div>
+      <div class="top-center menu">
+        <a href="#business">사업안내</a>
+        <a href="#complex">단지안내</a>
+        <a href="#units">평형정보</a>
+        <a href="#location">분양문의</a>
+      </div>
+      <div class="top-right contact-number">
+        <a href="tel:1666-6093">전화문의 1666-6093</a>
+      </div>
+    </div>
+    <div class="overlay">
+      <h1 class="hero-headline"> 광주 남구 중심의 프리미엄<br>힐스테이트 지석</h1>
+      <p class="hero-subtext"> 선착순 할인분양 1666-6093</p>
+    </div>
+  </header>
+
+  <!-- 사업안내 -->
+  <section id="business" class="image-section business-section">
+    <h2 class="section-title">사업안내</h2>
+    <div class="image-container">
+      <img src="images/business.png" class="scroll-fade" alt="사업안내 이미지">
+    </div>
+    <div class="business-info">
+      <div class="info-column">
+        <div class="info-item"><h3>대지위치</h3><p>광주광역시 남구 지석동 506번지 일원</p></div>
+        <div class="info-item"><h3>대지면적</h3><p>35,788㎡ (평)</p></div>
+        <div class="info-item"><h3>용적률 / 건폐율</h3><p>181.64% / 16.38%</p></div>
+      </div>
+      <div class="info-column">
+        <div class="info-item"><h3>규모</h3><p>아파트 지하 1층, 지상 12~20층 9개동</p></div>
+        <div class="info-item"><h3>세대수</h3><p>총 571세대 </p></div>
+        <div class="info-item"><h3>주차대수</h3><p>776대 (근린생활시설 5대 포함)</p></div>
+      </div>
+    </div>
+    <div class="image-container wide business2">
+      <img id="business2-image" src="images/business2.png" class="scroll-fade" alt="사업안내 추가 이미지">
+
+    <div class="image-container wide business3">
+      <img id="business2-image" src="images/business3.png" class="scroll-fade" alt="사업안내 추가 이미지2">
+
+
+</button>
+
+    </div>
+  </section>
+
+  <!-- 단지안내 -->
+  <section id="complex" class="image-section complex-section">
+    <h2 class="section-title">단지안내</h2>
+    <div class="image-container">
+      <img src="images/complex.png" class="scroll-fade" alt="단지안내 이미지">
+      <img src="images/complex1-1.png" class="scroll-fade" alt="단지안내 이미지2">
+    </div>
+  </section>
+
+  <!-- 평형안내 -->
+  <section id="units" class="image-section units-section">
+    <h2 class="section-title">평형안내</h2>
+    <div class="unit-tabs">
+      <button onclick="selectFloor('84')">84㎡</button>
+      <button onclick="selectFloor('115')">115㎡</button>
+
+    </div>
+    <div id="unit-subtabs" class="unit-subtabs"></div>
+    <div class="unit-slides">
+      <img id="unit-image" src="" alt="도면 이미지" style="display: none;">
+    </div>
+  </section>
+
+  <!-- 오시는길 -->
+  <section id="location" class="image-section location-section">
+    <h2 class="section-title">분양문의</h2>
+    <div class="image-container">
+ 
+    </div>
+    <h2>상담예약</h2>
+    <p>할인분양 예약/상담</p>
+    <div class="notice-box">
+      <div class="notice-inner">
+        <h3 class="notice-title">⚠ 주의사항</h3>
+        <p class="notice-text">
+          할인분양 세대는<br>
+          <strong class="highlight">30여 세대 한정</strong> 조기 마감 될 수 있습니다.<br>
+          예약 및 전화 문의 후<br>
+          <strong class="highlight">담당자를 통해 안내</strong>
+          받으실 수 있습니다.<br>
+          ↓아래에서 간편문의하기↓
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 문의 폼 -->
+  <div class="form-section">
+    <h2>예약/문의</h2>
+    <form id="contact-form" name="contact" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="contact" />
+      <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+        <input type="text" name="name" placeholder="이름" required style="flex: 1; min-width: 200px;" />
+        <input type="tel" name="phone" placeholder="연락처" required style="flex: 1; min-width: 200px;" />
+      </div>
+      <select name="type">
+        <option value="">관심 평형</option>
+        <option value="84">84㎡</option>
+        <option value="115">115㎡</option>
+      </select>
+      <label style="display: block; margin: 10px 0;">
+        <input type="checkbox" required style="margin-right: 0px;" /> 개인정보 수집 동의
+      </label>
+      <button type="submit">문의하기</button>
+    </form>
+  </div>
+
+  <!-- 문의 완료 모달 -->
+  <div id="thankyou-modal" class="modal-overlay">
+    <div class="modal-box">
+      <p>문의가 성공적으로 접수되었습니다.<br>빠른 시일 내에 연락드리겠습니다.</p>
+      <button onclick="closeModal()">확인</button>
+    </div>
+  </div>
+
+  <!-- 스크립트들 -->
+  <script>
+    const unitTypes = { '84': ['A'], '115': ['A']};
+    function selectFloor(size) {
+      const subtabs = document.getElementById('unit-subtabs');
+      subtabs.innerHTML = '';
+      unitTypes[size].forEach(type => {
+        const btn = document.createElement('button');
+        btn.innerText = `${size}${type}`;
+        btn.onclick = () => showUnitImage(`${size}${type}`);
+        subtabs.appendChild(btn);
+      });
+      showUnitImage(`${size}${unitTypes[size][0]}`);
+    }
+    function showUnitImage(id) {
+      const img = document.getElementById('unit-image');
+      img.src = `images/unit_${id}.png`;
+      img.alt = `${id} 도면`;
+      img.style.display = 'block';
+    }
+    window.addEventListener('DOMContentLoaded', () => selectFloor('84'));
+
+    const hero = document.querySelector('.hero');
+    const images = ['images/hero1.png', 'images/hero2.png', 'images/hero3.png'];
+    let index = 0;
+    function rotateHeroBackground() {
+      hero.style.backgroundImage = `url('${images[index]}')`;
+      index = (index + 1) % images.length;
+    }
+    if (window.innerWidth >= 1024) {
+      rotateHeroBackground();
+      setInterval(rotateHeroBackground, 5000);
+    }
+
+    function openZoom(imageSrc) {
+      const modal = document.getElementById('zoom-modal');
+      document.getElementById('zoomed-image').src = imageSrc;
+      modal.style.display = 'flex';
+    }
+    function closeZoom() {
+      document.getElementById('zoom-modal').style.display = 'none';
+    }
+
+    const scrollObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+          scrollObserver.unobserve(entry.target);
+        }
+      });
+    });
+    document.querySelectorAll('.scroll-fade').forEach(el => scrollObserver.observe(el));
+
+    document.getElementById("contact-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const formData = new FormData(this);
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString(),
+      })
+      .then(() => {
+        document.getElementById("thankyou-modal").style.display = "flex";
+        this.reset();
+      })
+      .catch(() => alert("전송 중 오류가 발생했습니다. 다시 시도해 주세요."));
+    });
+    function closeModal() {
+      document.getElementById("thankyou-modal").style.display = "none";
+    }
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    function closePopup(popupId, cookieName) {
+  const checkbox = document.querySelector(`#${popupId} input[type="checkbox"]`);
+  if (checkbox && checkbox.checked) {
+    const expiry = new Date();
+    expiry.setDate(expiry.getDate() + 1);
+    document.cookie = `${cookieName}=true; path=/; expires=${expiry.toUTCString()}`;
+  }
+  document.getElementById(popupId).style.display = "none";
+}
+
+function checkPopupCookie(popupId, cookieName) {
+  if (!document.cookie.includes(`${cookieName}=true`)) {
+    document.getElementById(popupId).style.display = "flex";
+  }
+}
+
+window.addEventListener("DOMContentLoaded", () => {
+  checkPopupCookie("popupModal", "hidePopup");
+  checkPopupCookie("popupModal2", "hidePopup2"); // ✅ 두 번째 팝업도 체크
+});
+  </script>
+
+  <!-- 푸터 -->
+  <footer class="site-footer">
+    <div class="footer-left">
+      <strong>힐스테이트 지산<br>㈜현대엔지니어링</strong><br>
+      시행사: 더 디시파크<br>시공사:㈜현대엔지니어링<br><br />
+      온라인 마케팅 대행 : 미쯔씨앤에이<br />
+      사업자번호 649-03-03725<br />
+      대표자명 한동근<br />
+      <p class="footer-note">※ 본 홈페이지의 CG, 이미지컷은 소비자의 이해를 돕기 위해 제작된 것으로 실제와 다소 차이가 있을 수 있습니다.<br>
+      ※ 본 홈페이지의 명시된 개발계획은 관계기관 혹은 지자체의 사정에 의해 변경 또는 취소될 수 있습니다.</p>
+      <p class="copyright">© 본페이지 콘텐츠의 무단 복제 및 재배포를 금지합니다.</p>
+    </div>
+    <div class="footer-right">
+      <button class="top-button" onclick="scrollToTop()">↑<br><span>TOP</span></button>
+    </div>
+  </footer>
+<!-- 모달 팝업 -->
+<!-- ✅ 이미지 팝업 모달 -->
+<div class="popup-overlay" id="popupModal" style="display: none;">
+  <div class="popup-box">
+    <button class="popup-close" onclick="closePopup('popupModal', 'hidePopup')">✕</button>
+    <img src="images/popup-banner.png" alt="팝업 이미지" class="popup-image">
+    <div class="popup-actions">
+      <label>
+        <input type="checkbox" id="hideToday" /> 오늘 하루 보지 않기
+      </label>
+      <button onclick="closePopup('popupModal', 'hidePopup')">닫기</button>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>
